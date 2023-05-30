@@ -1,1 +1,1 @@
-# Pset1
+# Pset1: Processamento de imagens
