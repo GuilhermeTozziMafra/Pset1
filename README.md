@@ -60,7 +60,9 @@
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Questão 6:
+O kernel k_x serve para as bordas na horizontal,o k_y serva para as bordas na vertical. Ao combinar os valroes de k_x e k_y, eles vão permitir a detecção de bordas na imagem.
 
+![nova_construct.png](https://github.com/GuilhermeTozziMafra/Pset1/blob/main/imagens_pset1/nova_construct.png)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Questão Extra:
 ![nova_cat.png](https://github.com/GuilhermeTozziMafra/Pset1/blob/main/imagens_pset1/nova_cat.png)
