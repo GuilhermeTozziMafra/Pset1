@@ -14,7 +14,7 @@
             
  O output esperado é 226, 166, 119, 55. Pois, será 255 (valor do pixel máximo) - o valor das Arrays.        
             
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Questão 2:
 ![nova_bluegill.png](https://github.com/GuilhermeTozziMafra/Pset1/blob/main/imagens_pset1/nova_bluegill.png)
 ### Questão 3: 
@@ -33,13 +33,34 @@
     175 x 0.00 +    174 x (-0.12) +    193 x 0.00
     =  32,76
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Questão 4:
 ![nova_pigbird.png](https://github.com/GuilhermeTozziMafra/Pset1/blob/main/imagens_pset1/nova_pigbird.png)
 
-#### Questão 5:
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#### Questão 5: Se quisermos usar uma versão desfocada B que foi feita com um kernel de desfoque de caixa de 3 × 3, que kernel k poderíamos usar para calcular toda a imagem nítida com uma única correlação? Justifique sua resposta mostrando os cálculos.
+       -> Exemplo:
+       k = [[-1, -1, -1],
+           [-1,  9, -1],
+           [-1, -1, -1]]
+                  
+       -> Aplicando a fórmula no Kernel acima:         
+       Sx,y = round(2Ix,y − Bx,y)
+       
+       -> Portanto, o cálculo final será:
+       Sx,y = round( 2 * ((Ix-1, y-1)*(-1) + (Ix, y-1)*(-1) + (Ix+1, y-1)*(-1) + (Ix-1, y)*(-1) + (Ix, y)*9 + (Ix+1, y)*(-1) + (Ix-1, y+1)*(-1) + (Ix, y+1)*(-1)
+                     + (Ix+1, y+1)*(-1)) - Bx,y )
+         
+    -> Outra parte da Questão 5
+   
+    z = Imagem.carregar('test_images/python.png') 
+    x = z.focada(11)
+    x.salvar("nova_python.png")
+![nova_python.png](https://github.com/GuilhermeTozziMafra/Pset1/blob/main/imagens_pset1/nova_python.png)
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Questão 6:
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Questão Extra:
 ![nova_cat.png](https://github.com/GuilhermeTozziMafra/Pset1/blob/main/imagens_pset1/nova_cat.png)
