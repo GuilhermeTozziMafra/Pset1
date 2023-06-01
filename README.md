@@ -65,4 +65,7 @@ O kernel k_x serve para as bordas na horizontal,o k_y serva para as bordas na ve
 ![nova_construct.png](https://github.com/GuilhermeTozziMafra/Pset1/blob/main/imagens_pset1/nova_construct.png)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 #### Questão Extra:
+       z = Imagem.carregar('test_images/cat.png') 
+           borradas = z.borrada(5)
+           borradas.salvar("nova_cat.png")
 ![nova_cat.png](https://github.com/GuilhermeTozziMafra/Pset1/blob/main/imagens_pset1/nova_cat.png)
